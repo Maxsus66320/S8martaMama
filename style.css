@@ -28,7 +28,7 @@ body {
     width: 90%; /* Увеличено для лучшего отображения на маленьких экранах */
     max-width: 800px;
     min-height: 300px; /* Уменьшено для мобильных устройств */
-    padding: 15px 15px; /* Уменьшено для мобильных устройств */
+    padding: 15px; /* Уменьшено для мобильных устройств */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,7 +37,7 @@ body {
     perspective: 200px;
     opacity: 0;
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1); /* Уменьшено для мобильных устройств */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Уменьшено для мобильных устройств */
     transform: translate3d(-50%, -50%, 0) rotateY(15deg); /* Центрирование карточки */
     animation: card 2s linear 2s forwards;
     border-radius: 10px;
@@ -100,5 +100,24 @@ body {
 
     .author {
         font-size: 26px; /* Еще меньше размер шрифта */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        min-height: 200px; /* Минимальная высота для очень маленьких экранов */
+        padding: 5px 10px; /* Минимальные отступы */
+    }
+
+    .title {
+        font-size: 32px; /* Минимальный размер шрифта */
+    }
+
+    .text {
+        font-size: 20px; /* Минимальный размер шрифта */
+    }
+
+    .author {
+        font-size: 22px; /* Минимальный размер шрифта */
     }
 }
