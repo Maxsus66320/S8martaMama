@@ -28,7 +28,7 @@ body {
     width: 90%; /* Увеличено для лучшего отображения на маленьких экранах */
     max-width: 800px;
     min-height: 300px; /* Уменьшено для мобильных устройств */
-    padding: 10px 20px; /* Уменьшено для мобильных устройств */
+    padding: 15px 15px; /* Уменьшено для мобильных устройств */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,7 +49,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #ff6945;
-    font-size: 40px; /* Уменьшено для мобильных устройств */
+    font-size: 60px; /* Уменьшено для мобильных устройств */
     line-height: 1;
     text-align: center;
 }
@@ -58,7 +58,7 @@ body {
     margin-bottom: 15px; /* Уменьшено для мобильных устройств */
     padding-bottom: 5px;
     color: #333;
-    font-size: 20px; /* Уменьшено для мобильных устройств */
+    font-size: 28px; /* Уменьшено для мобильных устройств */
     line-height: 1.2;
 }
 
@@ -68,7 +68,7 @@ body {
     -webkit-text-fill-color: transparent;
     opacity: 0;
     color: #121212;
-    font-size: 25px; /* Уменьшено для мобильных устройств */
+    font-size: 30px; /* Уменьшено для мобильных устройств */
     text-align: right;
     padding-right: 20px; /* Уменьшено для мобильных устройств */
     transition: opacity 1s linear;
@@ -84,21 +84,21 @@ body {
 }
 
 /* Медиа-запросы для дополнительной адаптивности */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .card {
-        width: 95%; /* Еще больше для очень маленьких экранов */
-        padding: 5px 10px; /* Еще меньше отступы */
+        min-height: 250px; /* Еще меньше высота для маленьких экранов */
+        padding: 10px 15px; /* Еще меньше отступы */
     }
 
     .title {
-        font-size: 30px; /* Еще меньше для очень маленьких экранов */
+        font-size: 40px; /* Еще меньше размер шрифта */
     }
 
     .text {
-        font-size: 18px; /* Еще меньше для очень маленьких экранов */
+        font-size: 24px; /* Еще меньше размер шрифта */
     }
 
     .author {
-        font-size: 20px; /* Еще меньше для очень маленьких экранов */
+        font-size: 26px; /* Еще меньше размер шрифта */
     }
 }
